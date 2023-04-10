@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Genres>
+  <Genre Id="1" pGenre="Poetry" />
+  <Genre Id="2" pGenre="Drama" />
+  <Genre Id="3" pGenre="Novelette" />
+</Genres>

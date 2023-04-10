@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Books>
+  <Book Id="1" Name="asd" GenreId="1" CollateralValue="20,4" Amount ="2" />
+  <Book Id="2" Name="KAL" GenreId="2" CollateralValue="30,2" Amount ="3" />
+  <Book Id="3" Name="FAK" GenreId="3" CollateralValue="90,0" Amount ="4" />
+</Books>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Clients>
+  <Client Id="1" FullName="AFD" Adress="skldasdkasd" Phone="092893824" Category="Student" />
+  <Client Id="2" FullName="Fad" Adress="asldmasuideioopq" Phone="89420395293" Category="Renter" />
+  <Client Id="3" FullName="lox" Adress="uiruowieodsopdaps" Phone="3892840952305" Category="Schoolkid" />
+</Clients>
