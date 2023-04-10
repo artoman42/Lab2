@@ -18,8 +18,8 @@ namespace LibraryDAL
             {
                 int Id;
                 string Name;
-                bool success = int.TryParse(node.Attributes.GetNamedItem("Id").Value, out Id);
-                Name = node.Attributes.GetNamedItem("Name").Value;
+                bool success = int.TryParse(node["Id"].InnerText, out Id);
+                Name = node["Name"].InnerText;
                 if (success)
                 {
                     authors.Add(new Author() { Id = Id, Name = Name });
@@ -46,11 +46,11 @@ namespace LibraryDAL
                 int Id, GenreId = 0, Amount = 0;
                 decimal CollateralValue = 0;
                 string Name;
-                bool success = int.TryParse(node.Attributes.GetNamedItem("Id").Value, out Id) 
-                    && int.TryParse(node.Attributes.GetNamedItem("GenreId").Value, out GenreId)
-                    && decimal.TryParse(node.Attributes.GetNamedItem("CollateralValue").Value, out CollateralValue)
-                    && int.TryParse(node.Attributes.GetNamedItem("Amount").Value, out Amount);
-                Name = node.Attributes.GetNamedItem("Name").Value;
+                bool success = int.TryParse(node["Id"].InnerText, out Id) 
+                    && int.TryParse(node["GenreId"].InnerText, out GenreId)
+                    && decimal.TryParse(node["CollateralValue"].InnerText, out CollateralValue)
+                    && int.TryParse(node["Amount"].InnerText, out Amount);
+                Name = node["Name"].InnerText;
                 if (success)
                 {
                     Books.Add(new Book() {
@@ -83,11 +83,11 @@ namespace LibraryDAL
                 int Id;
                 string FullName, Adress, Phone, category;
                 Library.enums.Categories Category =0;
-                FullName = node.Attributes.GetNamedItem("FullName").Value;
-                Adress = node.Attributes.GetNamedItem("Adress").Value;
-                Phone = node.Attributes.GetNamedItem("Phone").Value;
-                category = node.Attributes.GetNamedItem("Category").Value;
-                bool success = int.TryParse(node.Attributes.GetNamedItem("Id").Value, out Id)
+                FullName = node["FullName"].InnerText;
+                Adress = node["Adress"].InnerText;
+                Phone = node["Phone"].InnerText;
+                category = node["Category"].InnerText;
+                bool success = int.TryParse(node["Id"].InnerText, out Id)
                     && Enum.TryParse(category, out Category);
                 if (success)
                 {
@@ -120,9 +120,9 @@ namespace LibraryDAL
             foreach (XmlNode node in root.ChildNodes)
             {
                 int Id, BookId = 0, AuthorId = 0;
-                bool success = int.TryParse(node.Attributes.GetNamedItem("Id").Value, out Id)
-                    && int.TryParse(node.Attributes.GetNamedItem("BookId").Value, out BookId)
-                    && int.TryParse(node.Attributes.GetNamedItem("AuthorId").Value, out AuthorId);
+                bool success = int.TryParse(node["Id"].InnerText, out Id)
+                    && int.TryParse(node["BookId"].InnerText, out BookId)
+                    && int.TryParse(node["AuthorId"].InnerText, out AuthorId);
                 if (success)
                 {
                     Co_Authors.Add(new Co_Author()
@@ -153,8 +153,8 @@ namespace LibraryDAL
             {
                 int Id;
                 Library.enums.Genres Genre = 0;
-                bool success = int.TryParse(node.Attributes.GetNamedItem("Id").Value, out Id)
-                    && Enum.TryParse(node.Attributes.GetNamedItem("pGenre").Value, out Genre);
+                bool success = int.TryParse(node["Id"].InnerText, out Id)
+                    && Enum.TryParse(node["pGenre"].InnerText, out Genre);
                 if (success)
                 {
                     Genres.Add(new Genre()
@@ -184,11 +184,11 @@ namespace LibraryDAL
             {
                 int Id, ClientId = 0, BookId = 0;
                 DateTime DateOfIssue = DateTime.MinValue, ExpectedReturnDate = DateTime.UtcNow;
-                bool success = int.TryParse(node.Attributes.GetNamedItem("Id").Value, out Id)
-                    && int.TryParse(node.Attributes.GetNamedItem("ClientId").Value, out ClientId)
-                    && int.TryParse(node.Attributes.GetNamedItem("BookId").Value, out BookId)
-                    && DateTime.TryParse(node.Attributes.GetNamedItem("DateOfIssue").Value, out DateOfIssue)
-                    && DateTime.TryParse(node.Attributes.GetNamedItem("ExpectedReturnDate").Value, out ExpectedReturnDate);
+                bool success = int.TryParse(node["Id"].InnerText, out Id)
+                    && int.TryParse(node["ClientId"].InnerText, out ClientId)
+                    && int.TryParse(node["BookId"].InnerText, out BookId)
+                    && DateTime.TryParse(node["DateOfIssue"].InnerText, out DateOfIssue)
+                    && DateTime.TryParse(node["ExpectedReturnDate"].InnerText, out ExpectedReturnDate);
                 if (success)
                 {
                     Subscriptions.Add(new Subscription()

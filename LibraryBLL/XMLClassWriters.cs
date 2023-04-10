@@ -18,10 +18,12 @@ namespace LibraryBLL
                     xmlWriter.WriteStartElement("Author");
                     Console.WriteLine("Enter Author Id:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Id", s);
+                    xmlWriter.WriteStartElement("Id");
+                    xmlWriter.WriteString(s);
+                    xmlWriter.WriteEndElement();
                     Console.WriteLine("Enter Author Name:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Name", s);
+                    xmlWriter.WriteElementString("Name", s);
                     xmlWriter.WriteEndElement();
 
                 }
@@ -45,19 +47,19 @@ namespace LibraryBLL
                     xmlWriter.WriteStartElement("Book");
                     Console.WriteLine("Enter Book Id:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Id", s);
+                    xmlWriter.WriteElementString("Id", s);
                     Console.WriteLine("Enter Book Name:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Name", s);
+                    xmlWriter.WriteElementString("Name", s);
                     Console.WriteLine("Enter GenreId:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("GenreId", s);
+                    xmlWriter.WriteElementString("GenreId", s);
                     Console.WriteLine("Enter Collateral Value:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("CollateralValue", s);
+                    xmlWriter.WriteElementString("CollateralValue", s);
                     Console.WriteLine("Enter Amount:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Amount", s);
+                    xmlWriter.WriteElementString("Amount", s);
 
                     xmlWriter.WriteEndElement();
 
@@ -84,19 +86,19 @@ namespace LibraryBLL
                     xmlWriter.WriteStartElement("Client");
                     Console.WriteLine("Enter Client Id:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Id", s);
+                    xmlWriter.WriteElementString("Id", s);
                     Console.WriteLine("Enter Client Full Name:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("FullName", s);
+                    xmlWriter.WriteElementString("FullName", s);
                     Console.WriteLine("Enter Client Adress:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Adress", s);
+                    xmlWriter.WriteElementString("Adress", s);
                     Console.WriteLine("Enter Client Phone:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Phone", s);
+                    xmlWriter.WriteElementString("Phone", s);
                     Console.WriteLine("Enter Client Category:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Category", s);
+                    xmlWriter.WriteElementString("Category", s);
                     xmlWriter.WriteEndElement();
 
                 }
@@ -121,13 +123,13 @@ namespace LibraryBLL
                     xmlWriter.WriteStartElement("Co_Author");
                     Console.WriteLine("Enter Сo_Author Id:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Id", s);
+                    xmlWriter.WriteElementString("Id", s);
                     Console.WriteLine("Enter BookId:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("BookId", s);
+                    xmlWriter.WriteElementString("BookId", s);
                     Console.WriteLine("Enter AuthorId:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("AuthorId", s);
+                    xmlWriter.WriteElementString("AuthorId", s);
 
                     xmlWriter.WriteEndElement();
 
@@ -152,10 +154,10 @@ namespace LibraryBLL
                     xmlWriter.WriteStartElement("Genre");
                     Console.WriteLine("Enter Genre Id:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Id", s);
+                    xmlWriter.WriteElementString("Id", s);
                     Console.WriteLine("Enter pGenre:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("pGenre", s);
+                    xmlWriter.WriteElementString("pGenre", s);
 
                     xmlWriter.WriteEndElement();
 
@@ -181,19 +183,19 @@ namespace LibraryBLL
                     xmlWriter.WriteStartElement("Subscription");
                     Console.WriteLine("Enter Subscription Id:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("Id", s);
+                    xmlWriter.WriteElementString("Id", s);
                     Console.WriteLine("Enter ClientId:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("ClientId", s);
+                    xmlWriter.WriteElementString("ClientId", s);
                     Console.WriteLine("Enter BookId:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("BookId", s);
+                    xmlWriter.WriteElementString("BookId", s);
                     Console.WriteLine("Enter DateOfIssue:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("DateOfIssue", s);
+                    xmlWriter.WriteElementString("DateOfIssue", s);
                     Console.WriteLine("Enter ExpectedReturnDate:");
                     s = Console.ReadLine();
-                    xmlWriter.WriteAttributeString("ExpectedReturnDate", s);
+                    xmlWriter.WriteElementString("ExpectedReturnDate", s);
                     xmlWriter.WriteEndElement();
 
                 }

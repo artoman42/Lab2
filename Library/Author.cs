@@ -10,6 +10,10 @@ namespace Library
     {
         public string Name { get; set; }
 
+        public Author()
+        {
+
+        }
         public override string ToString()
         {
             return $"{Id} {Name} ";

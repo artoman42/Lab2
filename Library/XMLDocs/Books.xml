@@ -1,6 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Books>
-  <Book Id="1" Name="asd" GenreId="1" CollateralValue="20,4" Amount ="2" />
-  <Book Id="2" Name="KAL" GenreId="2" CollateralValue="30,2" Amount ="3" />
-  <Book Id="3" Name="FAK" GenreId="3" CollateralValue="90,0" Amount ="4" />
+  <Book>
+    <Id>1</Id>
+    <Name>asdasd</Name>
+    <GenreId>1</GenreId>
+    <CollateralValue>30,4</CollateralValue>
+    <Amount>5</Amount>
+  </Book>
+  <Book>
+    <Id>2</Id>
+    <Name>allafsf</Name>
+    <GenreId>2</GenreId>
+    <CollateralValue>90,5</CollateralValue>
+    <Amount>3</Amount>
+  </Book>
+  <Book>
+    <Id>3</Id>
+    <Name>lasdasd</Name>
+    <GenreId>3</GenreId>
+    <CollateralValue>67,4</CollateralValue>
+    <Amount>8</Amount>
+  </Book>
 </Books>
