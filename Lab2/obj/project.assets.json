@@ -316,7 +316,9 @@
         "dependencies": {
           "FluentValidation": "11.5.2",
           "LibraryDAL": "1.0.0",
-          "LibraryDataStructure": "1.0.0"
+          "LibraryDataStructure": "1.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.1"
         },
         "compile": {
           "bin/placeholder/LibraryBLL.dll": {}
@@ -346,6 +348,21 @@
         },
         "runtime": {
           "bin/placeholder/LibraryDataStructure.dll": {}
+        }
+      },
+      "LibraryUIL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "LibraryBLL": "1.0.0",
+          "LibraryDAL": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibraryUIL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryUIL.dll": {}
         }
       }
     }
@@ -847,13 +864,17 @@
       "type": "project",
       "path": "../Library/LibraryDataStructure.csproj",
       "msbuildProject": "../Library/LibraryDataStructure.csproj"
+    },
+    "LibraryUIL/1.0.0": {
+      "type": "project",
+      "path": "../LibraryUI/LibraryUIL.csproj",
+      "msbuildProject": "../LibraryUI/LibraryUIL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "FluentValidation >= 11.5.2",
-      "LibraryBLL >= 1.0.0",
-      "LibraryDAL >= 1.0.0",
+      "LibraryUIL >= 1.0.0",
       "Microsoft.Extensions.Configuration.Binder >= 7.0.4",
       "Microsoft.Extensions.Configuration.Json >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -867,9 +888,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KPI\\.NET\\Lab2\\Lab2\\LibraryUIL.csproj",
-      "projectName": "LibraryUIL",
-      "projectPath": "D:\\KPI\\.NET\\Lab2\\Lab2\\LibraryUIL.csproj",
+      "projectUniqueName": "D:\\KPI\\.NET\\Lab2\\Lab2\\ProgrammBuilder.csproj",
+      "projectName": "ProgrammBuilder",
+      "projectPath": "D:\\KPI\\.NET\\Lab2\\Lab2\\ProgrammBuilder.csproj",
       "packagesPath": "C:\\Users\\artom\\.nuget\\packages\\",
       "outputPath": "D:\\KPI\\.NET\\Lab2\\Lab2\\obj\\",
       "projectStyle": "PackageReference",
@@ -892,11 +913,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\KPI\\.NET\\Lab2\\LibraryBLL\\LibraryBLL.csproj": {
-              "projectPath": "D:\\KPI\\.NET\\Lab2\\LibraryBLL\\LibraryBLL.csproj"
-            },
-            "D:\\KPI\\.NET\\Lab2\\LibraryDAL\\LibraryDAL.csproj": {
-              "projectPath": "D:\\KPI\\.NET\\Lab2\\LibraryDAL\\LibraryDAL.csproj"
+            "D:\\KPI\\.NET\\Lab2\\LibraryUI\\LibraryUIL.csproj": {
+              "projectPath": "D:\\KPI\\.NET\\Lab2\\LibraryUI\\LibraryUIL.csproj"
             }
           }
         }

@@ -1,6 +1,4 @@
-﻿using LibraryBLL;
-using LibraryDAL;
-using LibraryUIL;
+﻿using LibraryUIL;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;

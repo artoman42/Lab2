@@ -1,11 +1,23 @@
 ﻿using System.Globalization;
 using System.Xml;
-
+using Microsoft.Extensions.Configuration;
+using Microsoft.VisualBasic.FileIO;
+using Microsoft.Extensions.Options;
 namespace LibraryBLL
 {
     public class XMLClassWriters : IXMLClassWriters
     {
-        public string path = "D:\\KPI\\.NET\\Lab2\\Library\\XMLDocs\\";
+        private readonly MyConfiguration _config;
+        public string path;
+        public XMLClassWriters(IOptions<MyConfiguration> config)
+        {
+            _config = config.Value;
+            path = _config.XMLDocsFolder;
+        }
+
+        //public string path = "D:\\KPI\\.NET\\Lab2\\Library\\XMLDocs\\";
+        //public string path = _config.XMLDocsFolder;
+
         public void AuthorsWrite(string FileName, int amount)
         {
             XmlWriterSettings settings = new XmlWriterSettings();

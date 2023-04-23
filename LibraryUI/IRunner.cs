@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryUIL
 {
-    internal interface IRunner
+    public interface IRunner
     {
         void Run();
     }

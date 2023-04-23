@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O5U0za4M6rNfcQpLIwtuSrcooLTwkKKlER7YAllo5hCDQRt7ZYLrybHP44dBGLTl3AW8kL5jKXEOsezUCywoYg==",
+  "dgSpecHash": "uwPpxJ1gYDH45viB3I7b3/LdSaCCdlTVLUtKarsCNi6g1t2aqQcjd5gm8Bg6cEd1BxfvoSjQkEaNUbC5GGcLnw==",
   "success": true,
-  "projectFilePath": "D:\\KPI\\.NET\\Lab2\\Lab2\\LibraryUIL.csproj",
+  "projectFilePath": "D:\\KPI\\.NET\\Lab2\\Lab2\\ProgrammBuilder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artom\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\artom\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

@@ -20,8 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LibraryBLL\LibraryBLL.csproj" />
-    <ProjectReference Include="..\LibraryDAL\LibraryDAL.csproj" />
+    <ProjectReference Include="..\LibraryUI\LibraryUIL.csproj" />
   </ItemGroup>
 
 </Project>
