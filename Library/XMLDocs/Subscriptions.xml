@@ -4,21 +4,21 @@
     <Id>1</Id>
     <ClientId>1</ClientId>
     <BookId>1</BookId>
-    <DateOfIssue>Jan 1, 2007, 14:25:34</DateOfIssue>
-    <ExpectedReturnDate>Jan 1, 2013, 14:25:34</ExpectedReturnDate>
+    <DateOfIssue>2023-04-11T15:30:00Z</DateOfIssue>
+    <ExpectedReturnDate>2023-04-11T15:30:00Z</ExpectedReturnDate>
   </Subscription>
   <Subscription>
     <Id>2</Id>
     <ClientId>2</ClientId>
     <BookId>3</BookId>
-    <DateOfIssue>Feb 4, 2003, 14:25:34</DateOfIssue>
-    <ExpectedReturnDate>Jan 1, 2009, 14:25:34</ExpectedReturnDate>
+    <DateOfIssue>2023-04-11T15:30:00Z</DateOfIssue>
+    <ExpectedReturnDate>2023-04-11T15:30:00Z</ExpectedReturnDate>
   </Subscription>
   <Subscription>
     <Id>3</Id>
     <ClientId>2</ClientId>
     <BookId>3</BookId>
-    <DateOfIssue>Jun 21, 2013, 14:25:34</DateOfIssue>
-    <ExpectedReturnDate>Jun 22, 2017, 14:25:34</ExpectedReturnDate>
+    <DateOfIssue>2023-04-11T15:30:00Z</DateOfIssue>
+    <ExpectedReturnDate>2023-04-11T15:30:00Z</ExpectedReturnDate>
   </Subscription>
 </Subscriptions>

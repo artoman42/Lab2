@@ -10,3 +10,8 @@ D:\KPI\.NET\Lab2\LibraryBLL\obj\Debug\net6.0\LibraryBLL.dll
 D:\KPI\.NET\Lab2\LibraryBLL\obj\Debug\net6.0\refint\LibraryBLL.dll
 D:\KPI\.NET\Lab2\LibraryBLL\obj\Debug\net6.0\LibraryBLL.pdb
 D:\KPI\.NET\Lab2\LibraryBLL\obj\Debug\net6.0\ref\LibraryBLL.dll
+D:\KPI\.NET\Lab2\LibraryBLL\bin\Debug\net6.0\LibraryDAL.dll
+D:\KPI\.NET\Lab2\LibraryBLL\bin\Debug\net6.0\LibraryDataStructure.dll
+D:\KPI\.NET\Lab2\LibraryBLL\bin\Debug\net6.0\LibraryDAL.pdb
+D:\KPI\.NET\Lab2\LibraryBLL\bin\Debug\net6.0\LibraryDataStructure.pdb
+D:\KPI\.NET\Lab2\LibraryBLL\obj\Debug\net6.0\LibraryBLL.csproj.CopyComplete

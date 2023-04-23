@@ -1,8 +1,9 @@
-﻿using System.Xml;
+﻿using System.Globalization;
+using System.Xml;
 
 namespace LibraryBLL
 {
-    public class XMLClassWriters
+    public class XMLClassWriters : IXMLClassWriters
     {
         public string path = "D:\\KPI\\.NET\\Lab2\\Library\\XMLDocs\\";
         public void AuthorsWrite(string FileName, int amount)
@@ -190,12 +191,30 @@ namespace LibraryBLL
                     Console.WriteLine("Enter BookId:");
                     s = Console.ReadLine();
                     xmlWriter.WriteElementString("BookId", s);
-                    Console.WriteLine("Enter DateOfIssue:");
+                    Console.WriteLine("Enter DateOfIssue(YYYY-MM-DDTHH:MM:SSZ):");
                     s = Console.ReadLine();
-                    xmlWriter.WriteElementString("DateOfIssue", s);
-                    Console.WriteLine("Enter ExpectedReturnDate:");
+                    if (IsValidDateFormat(s))
+                    {
+                        xmlWriter.WriteElementString("DateOfIssue", s);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Bad format!Try Again! And will be set today");
+                        s = DateTime.Now.ToString("s",CultureInfo.GetCultureInfo("en-US"));
+                        xmlWriter.WriteElementString("DateOfIssue", s);
+                    }
+                    Console.WriteLine("Enter ExpectedReturnDate(YYYY-MM-DDTHH:MM:SSZ):");
                     s = Console.ReadLine();
-                    xmlWriter.WriteElementString("ExpectedReturnDate", s);
+                    if (IsValidDateFormat(s))
+                    {
+                        xmlWriter.WriteElementString("ExpectedReturnDate", s);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Bad format!Try Again! And will be set today");
+                        s = DateTime.Now.ToString("s", CultureInfo.GetCultureInfo("en-US"));
+                        xmlWriter.WriteElementString("ExpectedReturnDate", s);
+                    }
                     xmlWriter.WriteEndElement();
 
                 }
@@ -205,6 +224,10 @@ namespace LibraryBLL
             }
 
         }
-
+        public static bool IsValidDateFormat(string input)
+        {
+            DateTime output;
+            return DateTime.TryParseExact(input, "yyyy-MM-ddTHH:mm:ssZ", CultureInfo.InvariantCulture, DateTimeStyles.None, out output);
+        }
     }
 }

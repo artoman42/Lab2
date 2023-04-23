@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace LibraryDAL
 {
-    public class XMLClassReader
+    public class XMLClassReader : IXMLClassReader
     {
         public string path = "D:\\KPI\\.NET\\Lab2\\Library\\XMLDocs\\";
         public IEnumerable<Author> AuthorReader(string FileName) { 

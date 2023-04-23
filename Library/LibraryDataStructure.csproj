@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="XMLDocs\" />
+    <Folder Include="XSDSchemes\" />
   </ItemGroup>
 
 </Project>

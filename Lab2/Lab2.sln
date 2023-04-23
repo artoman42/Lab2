@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2", "Lab2.csproj", "{7EA4F599-E3A7-460F-828A-AC8388FF8B40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryUIL", "LibraryUIL.csproj", "{7EA4F599-E3A7-460F-828A-AC8388FF8B40}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryDataStructure", "..\Library\LibraryDataStructure.csproj", "{F14D1BB0-1716-4E91-B9C3-CAE9D577D764}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryUIL", "..\LibraryUIL\LibraryUIL.csproj", "{6700F737-9FA8-47F4-BB0A-5038CCFA1B19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryBLL", "..\LibraryBLL\LibraryBLL.csproj", "{E249CA19-0FCA-49DA-83D3-B18E29321E06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryBLL", "..\LibraryBLL\LibraryBLL.csproj", "{E249CA19-0FCA-49DA-83D3-B18E29321E06}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryDAL", "..\LibraryDAL\LibraryDAL.csproj", "{EB6B1F96-5AB6-42C2-9E58-E0529D57F49F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryDAL", "..\LibraryDAL\LibraryDAL.csproj", "{EB6B1F96-5AB6-42C2-9E58-E0529D57F49F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +25,6 @@ Global
 		{F14D1BB0-1716-4E91-B9C3-CAE9D577D764}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F14D1BB0-1716-4E91-B9C3-CAE9D577D764}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F14D1BB0-1716-4E91-B9C3-CAE9D577D764}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6700F737-9FA8-47F4-BB0A-5038CCFA1B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6700F737-9FA8-47F4-BB0A-5038CCFA1B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6700F737-9FA8-47F4-BB0A-5038CCFA1B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6700F737-9FA8-47F4-BB0A-5038CCFA1B19}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E249CA19-0FCA-49DA-83D3-B18E29321E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E249CA19-0FCA-49DA-83D3-B18E29321E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E249CA19-0FCA-49DA-83D3-B18E29321E06}.Release|Any CPU.ActiveCfg = Release|Any CPU

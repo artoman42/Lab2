@@ -6,4 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="QueryHelperClasses\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryDAL\LibraryDAL.csproj" />
+    <ProjectReference Include="..\Library\LibraryDataStructure.csproj" />
+  </ItemGroup>
+
 </Project>

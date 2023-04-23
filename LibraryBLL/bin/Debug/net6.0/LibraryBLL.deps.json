@@ -7,14 +7,41 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "LibraryBLL/1.0.0": {
+        "dependencies": {
+          "LibraryDAL": "1.0.0",
+          "LibraryDataStructure": "1.0.0"
+        },
         "runtime": {
           "LibraryBLL.dll": {}
+        }
+      },
+      "LibraryDAL/1.0.0": {
+        "dependencies": {
+          "LibraryDataStructure": "1.0.0"
+        },
+        "runtime": {
+          "LibraryDAL.dll": {}
+        }
+      },
+      "LibraryDataStructure/1.0.0": {
+        "runtime": {
+          "LibraryDataStructure.dll": {}
         }
       }
     }
   },
   "libraries": {
     "LibraryBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibraryDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibraryDataStructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
