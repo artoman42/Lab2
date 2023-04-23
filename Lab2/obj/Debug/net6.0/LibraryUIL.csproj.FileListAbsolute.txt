@@ -22,3 +22,17 @@ D:\KPI\.NET\Lab2\Lab2\obj\Debug\net6.0\refint\LibraryUIL.dll
 D:\KPI\.NET\Lab2\Lab2\obj\Debug\net6.0\LibraryUIL.pdb
 D:\KPI\.NET\Lab2\Lab2\obj\Debug\net6.0\LibraryUIL.genruntimeconfig.cache
 D:\KPI\.NET\Lab2\Lab2\obj\Debug\net6.0\ref\LibraryUIL.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\FluentValidation.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\System.Text.Json.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\KPI\.NET\Lab2\Lab2\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
